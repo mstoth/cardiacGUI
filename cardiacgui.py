@@ -25,8 +25,8 @@ class CardiacDisplay:
         im3t=self.im3.transform(self.im3.size,Image.AFFINE,(1,0,-155,0,1,s3v))
         self.displayed_image=self.im4.transform(self.im4.size,Image.AFFINE,(1,0,-280,0,1,s4v))
         self.displayed_image.paste(im3t,(0,0),im3t)
-        self.displayed_image.paste(im2t,(0,0),im2t)
         self.displayed_image.paste(im1t,(0,0),im1t)
+        self.displayed_image.paste(im2t,(0,0),im2t)
         self.displayed_image.paste(self.im,(0,0),self.im)
         self.displayed_image.show()
 
